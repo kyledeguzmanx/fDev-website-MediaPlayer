@@ -1,0 +1,118 @@
+:root{
+    --background-color: #1c2541;
+    --text-color: #c5c3c6;
+    --white-color: #dcdcdd;
+}
+html, body{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color);
+    transition: background-color 1s;
+}
+
+.player{
+    height: 95vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.details{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+.track-art{
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-image: url(https://img.wattpad.com/d470d16742aecf5c3742bcc8bff976c4471f832a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f725575434c30536f4261626444413d3d2d35302e313631383231636461396134326438633630383634383339333434392e6a7067?s=fit&w=720&h=720);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+}
+.now-playing{
+    font-size: 1rem;
+}
+.track-name{
+    font-size: 3rem;
+}
+.track-artist{
+    font-size: 1.5rem;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.playpause-track, .prev-track, .next-track{
+    padding: 25px;
+    opacity: 0.5;
+    transition: opacity .2s;
+}
+.playpause-track:hover, .prev-track:hover, .next-track:hover {
+  opacity: 1.0;
+}
+.slider_container{
+    width: 75%;
+    max-width: 400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seek_slider, .volume_slider{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 1.0;
+}
+.seek_slider {
+    width: 60%;
+  }
+
+  .volume_slider {
+    width: 30%;
+  }
+    
+  .current-time,.total-duration {
+    padding: 10px;
+  }  
+  i.fa-volume-down,
+i.fa-volume-up {
+  padding: 10px;
+}
+  
+/* Change the mouse cursor to a pointer
+   when hovered over */
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+  cursor: pointer;
+}
