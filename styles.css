@@ -11,10 +11,11 @@ html, body{
 body{
     background-color: var(--background-color);
     transition: background-color 1s;
+    color: var(--white-color);
 }
 
 .player{
-    height: 95vh;
+    height: 100vh;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -25,22 +26,22 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 5vh;
 }
 .track-art{
     margin: 25px;
-    height: 250px;
-    width: 250px;
+    height: 400px;
+    width: 400px;
     background-image: url(https://img.wattpad.com/d470d16742aecf5c3742bcc8bff976c4471f832a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f725575434c30536f4261626444413d3d2d35302e313631383231636461396134326438633630383634383339333434392e6a7067?s=fit&w=720&h=720);
     background-size: cover;
     background-position: center;
-    border-radius: 15%;
+    border-radius: 5%;
 }
 .now-playing{
     font-size: 1rem;
 }
 .track-name{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .track-artist{
     font-size: 1.5rem;
