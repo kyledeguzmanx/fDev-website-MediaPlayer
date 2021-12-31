@@ -6,8 +6,15 @@ An online web player for music. It will feature a dozen or two songs. The users 
 - CSS FlexBox
 - Vanilla JS
 ## SCREENSHOTS
+### PHASE 1
 ![Screenshot 1](https://github.com/kyledeguzmanx/fDev-website-MediaPlayer/blob/master/img/Sample1.png)
-
+### PHASE 2
+![Model1](https://github.com/kyledeguzmanx/fDev-website-MediaPlayer/blob/master/img/screen1.png)
+![Model2](https://github.com/kyledeguzmanx/fDev-website-MediaPlayer/blob/master/img/screen2.png)
+![Model1](https://github.com/kyledeguzmanx/fDev-website-MediaPlayer/blob/master/img/screen3.png)
+![Model2](https://github.com/kyledeguzmanx/fDev-website-MediaPlayer/blob/master/img/screen4.png)
+![Model1](https://github.com/kyledeguzmanx/fDev-website-MediaPlayer/blob/master/img/screen5.png)
+![Model2](https://github.com/kyledeguzmanx/fDev-website-MediaPlayer/blob/master/img/screen6.png)
 ## CREDITS
 - Coolors Color Pallettes  
 - Instagram Images  
