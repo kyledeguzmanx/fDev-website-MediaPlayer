@@ -9,9 +9,8 @@ html, body{
 }
 
 body{
-    background-color: var(--background-color);
-    transition: background-color 1s;
-    color: var(--white-color);
+    
+    transition: background-color 5.2s, color 5.2s;
 }
 
 .player{
@@ -88,14 +87,9 @@ body{
   border-radius: 50%;
 }
 
-.seek_slider:hover,
-
-.seek_slider {
+.seek_slider:hover,.seek_slider {
     width: 300px;
   }
-
-
-    
   .current-time,.total-duration {
     padding: 10px;
   }  

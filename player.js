@@ -8,7 +8,7 @@ let next_btn = document.querySelector(".next-track");
 let prev_btn = document.querySelector(".prev-track");
   
 let seek_slider = document.querySelector(".seek_slider");
-let volume_slider = document.querySelector(".volume_slider");
+
 let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
 
@@ -23,85 +23,113 @@ let track_list = [
       name: "Fool For You",
       artist: "Snoh Aalegra",
       image: "img/snoha.jpg",
-      path: "audio/snoh.mp3"
+      path: "audio/snoh.mp3",
+      color:"#ecebe7",
+      text: "black"
     },
     {
       name: "3 Hour Drive (feat Sampha)",
       artist: "Alicia Keys",
       image: "img/aliciakeys.png",
-      path: "audio/Alicia.mp3"
+      path: "audio/Alicia.mp3",
+      color: "#bf734d",
+      text: "white"
     },
     {
       name: "True Colors",
       artist: "The Weeknd",
       image: "img/weeknd.jpg",
       path: "audio/weeknd.mp3",
+      color: "#161b0e",
+      text: "white"
     },
     {
         name: "Before I Do",
         artist: "Sevyn Streeter",
         image: "img/sevyn.jpg",
         path: "audio/Sevyn.mp3",
+        color:"#935324",
+        text: "white"
     },
     {
         name: "Still Your Best",
         artist: "Giveon",
         image: "img/giveon.png",
         path: "audio/Giveon.mp3",
+        color: "#935732",
+        text: "white"
     },
     {
         name: "U 2 Luv (feat Jeremih)",
         artist: "Ne-Yo",
         image: "img/neyo.png",
         path: "audio/neyo.mp3",
+        color: "#45324f",
+        text: "white"
     },
     {
         name: "Easy (feat 6LACK)",
         artist: "Next Town Down",
         image: "img/nexttown.jpg",
         path: "audio/easy.mp3",
+        color: "#524813",
+        text: "white"
     },
     {
         name: "Superstar",
         artist: "Majid Jordan",
         image: "img/majid.png",
         path: "audio/superstar.mp3",
+        color: "#e63531",
+        text: "white"
     },
     {
         name: "Prom",
         artist: "SZA",
         image: "img/sza.jpg",
         path: "audio/prom.mp3",
+        color: "#242a44",
+        text: "white"
     },
     {
         name: "Chicago Boys",
         artist: "Ari Lennox",
         image: "img/ari.jpg",
         path: "audio/chicagoboys.mp3",
+        color: "#a06067",
+        text: "white"
     },
     {
         name: "Morocco (feat 6LACK)",
         artist: "Alina Baraz",
         image: "img/alina.jpg",
         path: "audio/morocco.mp3",
+        color: "#dddae2",
+        text: "black"
     },
     {
         name: "Tonight",
         artist: "ZAYN",
         image: "img/zayn.jpg",
         path: "audio/tonight.mp3",
+        color: "#b18b80",
+        text: "white"
     },
     {
         name: "Grateful",
         artist: "Mahalia",
         image: "img/mahlia.jpg",
         path: "audio/grateful.mp3",
+        color: "#191c6b",
+        text: "white"
     },
     {
         name: "What If",
         artist: "Amber Mark",
         image: "img/ambermark.jpg",
         path: "audio/whatif.mp3",
+        color: "#93190c",
+        text: "white"
     },
   ];
 
@@ -119,6 +147,8 @@ let track_list = [
     track_name.textContent = track_list[track_index].name;
     track_artist.textContent = track_list[track_index].artist;
     now_playing.textContent = "PLAYING " + (track_index + 1) + " OF " + track_list.length;
+    document.body.style.background = track_list[track_index].color;
+    document.body.style.color=track_list[track_index].text;
     
     // Set an interval of 1000 milliseconds
     // for updating the seek slider
@@ -126,7 +156,7 @@ let track_list = [
     
     // Move to the next track if the current finishes playing
     // using the 'ended' event
-    curr_track.addEventListener("ended", nextTrack);
+    curr_track.addEventListener("ended", nextTrack); // ended event for video and audio
     }
     
     // Function to reset all values to their default
@@ -192,12 +222,6 @@ let track_list = [
             
             // Set the current track position to the calculated seek position
             curr_track.currentTime = seekto;
-    }
-            
-    function setVolume() {
-            // Set the volume according to the
-            // percentage of the volume slider set
-            curr_track.volume = volume_slider.value / 100;
     }
             
     function seekUpdate() {
