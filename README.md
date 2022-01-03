@@ -5,6 +5,12 @@ An online web player for music. It will feature a dozen or two songs. The users 
 ## TECHNOLOGY USED
 - CSS FlexBox
 - Vanilla JS
+
+## FEATURES
+- Play Button & Pause Button  
+- Previous Track Button & Next Track Button  
+- Artist Artwork 
+- Changing Background Color   
 ## SCREENSHOTS
 ### PHASE 1
 ![Screenshot 1](https://github.com/kyledeguzmanx/fDev-website-MediaPlayer/blob/master/img/Sample1.png)
