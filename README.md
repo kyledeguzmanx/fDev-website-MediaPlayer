@@ -2,6 +2,8 @@
 ## INTRODUCTION
 An online web player for music. It will feature a dozen or two songs. The users will be able to see the track name and artist name. The user will be able go the prevous song, next song, or pause the current song. And the user will be able to adjust the volume.
 
+live site: https://kyledeguzmanx.github.io/fDev-website-MediaPlayer/
+
 ## TECHNOLOGY USED
 - CSS FlexBox
 - Vanilla JS
